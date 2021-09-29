@@ -1,0 +1,34 @@
+body{
+    background-color: #92a8d1;
+}
+#navbar{
+    background-color: #034f84;
+}
+.intro{
+    height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.content{
+    background: lightpink;
+    background: linear-gradient(24deg, lightpink 0%, rgb(255, 164, 238) 100%);
+    padding-top: 5%;
+}
+.title{
+    background-color:pink;
+    text-align: center;
+    cursor: pointer;
+}
+.blockquote{
+    border-left: 10px solid steelblue;
+    background-color: thistle;
+    padding: 1%;
+}
+.project{
+    background: rgb(34,193,195);
+    background: linear-gradient(24deg, rgba(255, 89, 83, 0.767) 0%, rgba(221, 99, 91, 0.76) 100%);
+    cursor: pointer;
+}
+.link-shadow{
+    color: whitesmoke;
+}

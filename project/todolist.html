@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>To do - list</title>
+</head>
+<style>
+    body{
+        /* For browsers that do not support gradients */
+        background-color: darkgrey;
+    }
+
+    div {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    #input[type=text] {
+        width: 70%;
+        height: 45px;
+        text-shadow: black;
+        border: none;
+        border-bottom: 5px solid green;
+        border-radius: 25px;
+        padding-left: 2%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        width: 70%;
+        border: 1px solid gray;
+        padding: 1%;
+        background-image: linear-gradient(to right,pink, rgb(204, 120, 179));
+        border-radius: 10px;
+        font-weight: bold;
+        overflow: auto;
+    }
+    
+    #text{
+        background-color: rgb(87, 214, 236);
+        display: inline-block;
+        border-radius: 5px;
+    }
+    #btnAdd{
+        background-color: greenyellow;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        /*height: 40px;
+        width: 40px;*/
+        border: 2px solid green;
+    }
+    .btnDel {
+        float: right;
+        cursor: pointer;
+        background-color: rgb(190, 15, 15);
+        border: none;
+        border-radius: 10px;
+    }
+
+    .checkbox {
+        padding-left: 0%;
+        width: 15px;
+        height: 15px;
+    }
+</style>
+
+<body>
+    <div>
+        <input type="text" id="input" onfocus="this.value=''" placeholder=" Write your list here ...">
+        <button onclick="run()" id="btnAdd">Add</button><br>
+        <p id="text" style="color: rgb(219, 59, 59); font-size: small;"></p>
+        <ul id="list"></ul>
+    </div>
+</body>
+<script>
+    document.addEventListener("keyup", function (event) {
+        if (event.keyCode == 13) run();
+    })
+    function done(el){
+        document.querySelector('.checkbox').disabled =true;
+        el.style.textDecoration = 'line-through';
+    }
+    function run() {
+        /*
+        First create an LI element,
+        then print text from input to LI,
+        finally append LI element to the LIST.
+        */
+        var a = document.getElementById("input").value;
+        if (a.length == 0) document.getElementById("text").innerHTML = "Please write some thing. ";
+        else {
+            document.getElementById("text").innerHTML = " ";
+            var list = document.getElementById("list");
+            let toDo = document.createElement("li");
+            toDo.className = 'listToDo';
+            toDo.innerHTML = '<input type="checkbox" class="checkbox" onclick="done(this.parentElement)"> ' + a + '<button class="btnDel" onclick="this.parentElement.remove()"><i class="fa fa-trash" aria-hidden="true"></i></button>';
+            list.appendChild(toDo);
+        }
+    }
+</script>
+
+</html>
