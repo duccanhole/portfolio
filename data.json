@@ -1,0 +1,66 @@
+﻿{
+  "hero": {
+    "title": "Hi, I'm Canh Duc — Software Engineer.",
+    "subtitle": "I build scalable products, not just features — always learning, improving every day, and looking for a place where I can contribute and grow alongside a strong team.",
+    "actions": [
+      { "label": "View Projects", "href": "#projects", "variant": "primary" },
+      { "label": "Get In Touch", "href": "#contact", "variant": "secondary" }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "description": "I'm a full-stack developer with 3+ years of experience building web and mobile applications. I focus on turning ideas into real, usable products — not just writing code.\nI’ve worked across frontend, backend, and mobile, using technologies like Vue, NestJS, and native mobile frameworks. I enjoy building systems that are clean, scalable, and easy to maintain.\nIn the AI era, I believe the value of a developer is not just technical skill, but the ability to understand problems, make decisions, and ship meaningful products."
+  },
+  "projects": {
+    "items": [
+      {
+        "name": "Mini CRM System",
+        "description": "Personal project – CRM platform for managing leads, customers, and activities.",
+        "tags": ["Web App", "React", "Java Spring Boot"],
+        "links": [
+          { "label": "Github", "href": "https://github.com/duccanhole/mini_crm_client" }
+        ]
+      },
+      {
+        "name": "Video Conferencing App (Android)",
+        "description": "Android application supporting real-time video communication. ",
+        "tags": ["Mobile", "Android", "Agora SDK"],
+        "links": [
+          { "label": "Github", "href": "https://github.com/duccanhole/video-call-android" }
+        ]
+      },
+      {
+        "name": "Lightbox.js – NPM Package",
+        "description": " a lightweight lightbox library supporting multiple file types with zero dependencies.",
+        "tags": ["NPM package", "JavaScript"],
+        "links": [
+          { "label": "Github", "href": "https://github.com/duccanhole/lightbox-js" }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "items": [
+      "Typescript & JavaScript",
+      "VueJs",
+      "ReactJs",
+      "Kotlin",
+      "NodeJs",
+      "Java Spring Boot",
+      "PostgreSQL",
+      "MongoDB",
+      "Docker",
+      "AI-assisted development"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "items": [
+      { "label": "Email:", "value": "canhhducc@gmail.com", "href": "mailto:canhhducc@gmail.com" },
+      { "label": "Phone:", "value": "+84 374 469 484", "href": "tel:+84374469484" },
+      { "label": "Location:", "value": "Ho Chi Minh City, VN" },
+      { "label": "LinkedIn:", "value": "linkedin.com/in/duc-canh-195380221", "href": "https://www.linkedin.com/in/duc-canh-195380221/" }
+    ]
+  },
+  "footer": "© 2026 Canh Duc."
+}
