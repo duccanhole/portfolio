@@ -1,6 +1,9 @@
 {
-  "dependencies": {
-    "hover.css": "^2.3.2",
-    "wow.js": "^1.2.2"
-  }
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2"
+  },
+  "dependencies": {},
+  "scripts": {}
 }
